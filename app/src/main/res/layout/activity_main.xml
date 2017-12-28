@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.merrychristmascard.MainActivity">
+
+    <your.app.package.ObservableScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sparkels1" />
+
+        <FrameLayout android:id="@+id/img_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="clip_vertical"
+                android:id="@+id/img"
+                android:scaleType="fitXY"
+                android:src="@drawable/sparkels2" />
+        </FrameLayout>
+    </your.app.package.ObservableScrollView>
+</RelativeLayout>
